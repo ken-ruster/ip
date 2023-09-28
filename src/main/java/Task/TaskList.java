@@ -38,7 +38,7 @@ public class TaskList {
         try {
             itemList.add(new ToDo(RemoveCommandWord(in)));
         } catch (EmptyDescriptionException e) {
-            e.printErrorMessage();
+            Ui.reportMissingTaskInfo();
             return;
         }
 
@@ -56,7 +56,7 @@ public class TaskList {
             Ui.reportMissingTaskInfo();
             return;
         } catch (EmptyDescriptionException e) {
-            e.printErrorMessage();
+            Ui.reportMissingTaskInfo();
             return;
         }
 
@@ -74,7 +74,7 @@ public class TaskList {
             Ui.reportMissingTaskInfo();
             return;
         } catch (EmptyDescriptionException e) {
-            e.printErrorMessage();
+            Ui.reportMissingTaskInfo();
             return;
         }
 
